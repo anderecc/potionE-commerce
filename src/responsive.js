@@ -15,7 +15,7 @@ const headerDesktop = (headerHeight, navHeight) => {
 const headerMobile = (headerHeight, promoHeight) => {
     $suggestions.style.display = `none`;
     $suggestions.style.top = `${headerHeight + promoHeight}px`;
-    $headerNav.style.top = `${headerHeight + promoHeight}px`;
+    $headerNav.style.top = `-100vh`;
     $main.style.marginTop = `${promoHeight}px`
 
 
@@ -26,8 +26,7 @@ const openMenu = () => {
     $headerNav.style.top = `${headerHeight + promoHeight}px`;
     $headerLogo.style.display = 'none';
     $headerCart.style.display = 'none';
-    $headerSearch.style.transform = 'translateX(0)';
-    $headerSearch.style.transition = 'transform .3s';
+    $headerSearch.style.display = 'flex';
     $suggestions.style.display = 'block';
     $suggestions.style.top = `${headerHeight + promoHeight}px`;
     $suggestions.innerHTML = '';
@@ -37,10 +36,10 @@ const openMenu = () => {
     $btnOpen.style.transform = 'scale(0)';
 };
 const closeMenu = () => {
-    $headerNav.style.top = `-100vh`
+    $headerNav.style.top = `-100vh`;
     $headerLogo.style.display = 'block';
     $headerCart.style.display = 'flex';
-    $headerSearch.removeAttribute('style')
+    $headerSearch.removeAttribute('style');
     $suggestions.style.display = 'none';
     
     $btnOpen.style.transform = 'scale(1)'
@@ -64,8 +63,8 @@ document.addEventListener('click', (e) => {
     if(window.innerWidth > 482){
         headerDesktop(headerHeight, navHeight);
     } else if(window.innerWidth <= 482){
-        headerMobile(headerHeight, promoHeight);
         closeMenu();
+        headerMobile(headerHeight, promoHeight);
     } 
     
 })();
