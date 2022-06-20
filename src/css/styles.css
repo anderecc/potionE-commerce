@@ -157,6 +157,7 @@
 }
 @media (max-width: 481px) {
   .header .header-search-container {
+    transform: translateX(100vw);
     display: none;
     animation: search 0.3s 1 forwards ease;
     margin: auto;
