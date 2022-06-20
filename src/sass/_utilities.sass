@@ -1,0 +1,27 @@
+@mixin reset-all
+    *
+        margin: 0
+        padding: 0
+        box-sizing: border-box
+        text-decoration: none
+        list-style: none
+
+@mixin mobile
+    @media (max-width: 481px)
+        @content
+
+@mixin border
+    border: solid 1px red
+
+@mixin flex-center
+    display: flex
+    align-items: center
+
+@mixin btnOrange
+    padding: 5px 10px
+    border-radius: 3px
+    border: none
+    background-color: #c42a0f
+    text-transform: uppercase
+    color: white
+    cursor: pointer

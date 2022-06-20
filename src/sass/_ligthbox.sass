@@ -1,0 +1,80 @@
+
+.product-lightbox
+    z-index: 10
+    @include flex-center
+    position: fixed
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    background-color: rgba(0, 0, 0, .5)
+    font-family: 'Buenard', serif
+    display: none
+
+    .product-ligthbox-container
+        padding: 5% 10% 0
+        background-color: white
+        margin: auto
+        width: 80%
+        height: 85%
+        position: relative
+        @include flex-center
+        @include mobile
+            flex-direction: column
+
+        .product-btn-close
+            border: none
+            background-color: transparent
+            font-size: 1.5rem
+            position: absolute
+            right: 10px
+            top: 5px
+            cursor: pointer
+        img
+            @include mobile
+                width: 50%
+            width: 60%
+        .product-info-container
+            h2
+                font-size: 1.2rem
+            .product-info
+                font-size: 1rem
+                font-weight: bold
+                margin-top: 2%
+            .product-price
+                margin-bottom: 3%
+                font-size: 1.3rem
+                color: $color-orange
+            .product-effect, .product-ingredients
+                font-size: .9rem
+            .product-add-container
+                @include flex-center
+                justify-content: space-between
+
+                .product-btn-add
+                    @include btnOrange
+                    font-size: .7rem
+                    padding: 5px 10px
+                    cursor: pointer
+                    transition: transform .3s background-color .2s color .2s
+                    width: 40%
+                    &:active
+                        transform: scale(.95)
+                        color: #5da81f
+                    &:hover
+                        background-color: $color-orange
+                .product-input-container
+                    height: 25px
+                    width: 50%
+                    @include flex-center
+                    justify-content: flex-end
+                    .input-add
+                        width: 60%
+                        height: 100%
+                        text-align: center
+                    .btn-a, .btn-b
+                        border: 1px solid $color-text
+                        padding: 4px 8px
+                        border-radius: 2px
+                        &:active
+                            transform: scale(.95)

@@ -1,0 +1,195 @@
+
+.header
+    width: 100%
+    height: 100px
+    position: relative
+    border-bottom: 1px solid $color-links
+    @include flex-center
+
+    .header-container
+        width: 100%
+        height: 100%
+        text-align: center
+        background-color: white
+        @include flex-center
+        justify-content: space-around
+        @include mobile
+            z-index: 1
+        .promotion-info
+            width: 15%
+            font-style: italic
+            font-family: 'Buenard', serif
+            font-size: 1rem
+            text-align: center
+            color: $color-orange
+            display: block
+            padding: 5px 0
+            @include flex-center
+            justify-content: center
+            @include mobile
+                font-size: 1.2rem
+                color: $color-text
+                height: 30px
+                background-color: $color-background
+                position: absolute
+                left: 0
+                bottom: -30px
+                width: 100%
+
+        .header-btn-container
+            display: none
+            @include mobile
+                z-index: 10
+                position: absolute
+                left: 0
+                justify-content: center
+                width: 20%
+                height: 100%
+                @include flex-center
+            .header-btn-close
+                transform: scale(0)
+            .header-btn-open, .header-btn-close
+                font-size: 1.8rem
+                cursor: pointer
+                transition: transform .2s
+                color: $color-itens
+                border: none
+                font-size: 2rem
+                background-color: transparent
+                position: absolute
+                &:hover
+                    color: #7b47a0
+        .header-logo
+            width: 35%
+            flex-direction: column
+            @include mobile
+                width: 60%
+                margin-left: 20%
+            .header-logo-title
+                text-transform: uppercase
+                color: $color-orange
+                font-family: 'Oswald', sans-serif
+                font-size: 1.4rem
+                @include mobile
+                    font-size: 1.2rem
+                span
+                    font-weight: 300
+            .header-logo-decrip
+                font-family: 'Buenard', serif
+                font-style: italic
+                color: $color-itens
+                position: relative
+                @include flex-center
+                justify-content: center
+                &::after, &::before
+                    margin: 0 2px
+                    top: 50%
+                    content: ''
+                    width: 20px
+                    border-bottom: 1px solid $color-itens
+        .header-cart
+            width: 15%
+            order: 4
+            justify-content: center
+            font-size: 2rem
+            position: relative
+            font-family: 'Buenard', serif
+            flex-direction: column
+            @include flex-center
+            @include mobile
+                font-size: 1.8rem
+            a
+                padding: 10px 10px 0
+                color: $color-itens
+                position: relative
+                &:hover
+                    color: #7b47a0
+            .cart-qtd
+                font-size: 1.5rem
+                color: $color-orange
+                transform: translateY(-25%)
+
+    .header-search-container
+        transform: translateX(0)
+        transition: transform .3s
+        border: solid 1px black
+        border-radius: 3px
+        height: 35px
+        width: 30%
+        justify-content: space-around
+        @include flex-center
+        @include mobile
+            margin: auto
+            transform: translateX(100vw)
+            position: absolute
+            top: calc( 50% - (35px / 2) )
+            left: 30%
+            width: 60%
+        i
+            color: $color-orange
+            height: 100%
+            @include flex-center
+            justify-content: center
+            padding: 5px
+            cursor: pointer
+        .header-search-input
+            outline: none
+            border: none
+            padding: 0 10px
+            height: 100%
+            width: 100%
+            &:focus
+                box-shadow: 0 0 0 1px $color-orange inset
+            &::placeholder
+                text-align: center
+
+    .header-nav
+        font-family: 'Buenard', serif
+        color: #ffffff98
+        width: 100%
+        background-color: $color-itens
+        transition: top .3s linear
+        position: absolute
+        left: 0
+        top: 100px
+        flex-direction: row7
+        justify-content: space-around
+        font-size: .9rem
+        padding-left: 5%
+        @include flex-center
+        @include mobile
+            font-size: 1rem
+            flex-direction: column
+            left: 0
+            top: -100vh
+
+        .header-nav-links, .header-nav-login
+            @include flex-center
+            flex-direction: row
+            @include mobile
+                width: 100%
+                flex-direction: column
+                &-login
+                    flex-direction: row
+            li
+                flex-wrap: wrap
+                width: 100%
+                justify-content: left
+                padding: 15px 0
+                @include flex-center
+                @include mobile
+                    padding: 15px 15px 15px 10%
+                    &:nth-child(-n+5)
+                        border-bottom: solid 1px #ffffff28
+                a
+                    margin: 0 10px
+                    display: block
+                    height: 100%
+                    font-style: italic
+                    color: white
+                    transition: all .3s
+                    &:hover
+                        letter-spacing: 1px
+        .header-nav-login
+            li
+                justify-content: center

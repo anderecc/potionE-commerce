@@ -1,0 +1,89 @@
+@import 'variables'
+@import 'utilities'
+@import 'header'
+@import 'suggestions'
+@import 'ligthbox'
+@import 'cart'
+@import 'footer'
+
+@include reset-all
+
+body
+    width: 100%
+    overflow-x: hidden
+    position: relative
+
+.main
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    grid-template-rows: 3fr 1fr
+    background-color: $color-background
+    font-family: 'Buenard', serif
+    @include mobile
+        @include flex-center
+        flex-direction: column
+    &-cart
+        @include flex-center
+        flex-direction: column
+
+    .products-container
+        width: 100%
+        text-align: left
+        background-color: white
+        padding: 3%
+        grid-column: 1 / 3
+        grid-row: 1 / 2
+        @include mobile
+            text-align: center
+            h2
+                margin: 20px 0
+
+        .products
+            display: grid
+            grid-template-columns: repeat(3, 1fr)
+            @include mobile
+                grid-template-columns: repeat(2, 1fr)
+            column-gap: 20px
+            .item
+                margin: 20% 0
+                text-align: center
+                font-size: 1rem
+                font-weight: 600
+                span
+                    color: $color-orange
+                img
+                    @include mobile
+                        width: 50%
+                    cursor: pointer
+                    width: 70%
+                    margin: auto
+    .newsLetter
+        width: 90%
+        margin: 5% auto
+        background-color: white
+        padding: 15px
+        text-align: left
+        font-size: 1rem
+        h4
+            font-style: italic
+            margin-bottom: 5px
+        p
+            margin: 5px 0
+        form
+            @include flex-center
+            justify-content: space-between
+            input, button
+                border-radius: 5px
+                height: 30px
+            input
+                width: 65%
+                border: 1px solid $color-text
+                padding-left: 10px
+                outline: none
+                &::placeholder
+                    padding-left: 10px
+                &:focus
+                    border: 1px solid $color-orange
+            button
+                width: 30%
+                @include btnOrange

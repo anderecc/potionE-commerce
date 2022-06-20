@@ -1,0 +1,39 @@
+
+.header-suggestions
+    position: absolute
+    left: 0
+    width: 100%
+    top: 100px
+    font-family: 'Buenard', serif
+    z-index: 20
+
+    li
+        background-color: rgba(0, 0, 0, .8)
+        padding: 2%
+        transition: all .3s
+        &:nth-child(n)
+            border-bottom: 1px solid rgba(0, 0, 0, .5)
+
+        &:hover
+            background-color: #523468a9
+        a
+            @include flex-center
+            justify-content: space-around
+            width: 100%
+            height: 60px
+            color: $color-links
+
+            span
+                height: 100%
+                @include flex-center
+                column-gap: 5px
+                img
+                    height: 100%
+                .suggestions-info
+                    color: $color-orange
+                    font-weight: bold
+                    column-gap: 0
+                    .h1
+                        color: yellow
+                        margin: 0
+                        padding: 0
