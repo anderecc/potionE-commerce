@@ -11,4 +11,4 @@ Nesse projeto eu me desafiei a criar o layout responsivo para mobile e desktop, 
 - Podemos remover do carrinho o item que não  desejas mais
 - Úsuario pode recarregar a página que seus itens ainda vão estar listados no carrinho
 
-Me senti orgulhoso de ter 'finalizado' esse projeto, aprendi muito e também fixei melhor os conhecimentos que já tinha, desenvolvi melhor minha noção e lógica de programação nesse projeto, foi muito desafiador para mim fazer sozinho, apenas com minhas pesquisas, acredito que estou no caminho certo pois a poucos meses eu dei meu primeiro Hello World!
+Me senti orgulhoso de ter 'finalizado' esse projeto, ainda irei fazer uns ajustes nele, como limpar mais o código, aprendi muito e também fixei melhor os conhecimentos que já tinha, desenvolvi melhor minha noção e lógica de programação nesse projeto, foi muito desafiador para mim fazer sozinho, apenas com minhas pesquisas, acredito que estou no caminho certo pois a poucos meses eu dei meu primeiro Hello World!
