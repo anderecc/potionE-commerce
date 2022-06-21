@@ -1,7 +1,7 @@
 ## Projeto de e-commerce
 Nesse projeto eu me desafiei a criar o layout responsivo para mobile e desktop, também foi muito desafiador fazer as funcionalidades, no ínicio eu confesso que fiquei perdido mas aos poucos foi tomando forma.
 
-# Consegui adicionar as seguintes funcionaldiades:
+### Consegui adicionar as seguintes funcionaldiades:
 - Menu
 - Listagem dos produtos pegando os dados passados no Json
 - Lightbox do produto selecionado
