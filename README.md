@@ -1,22 +1,14 @@
-# Quero trabalhar na enext
+## Projeto de e-commerce
+Nesse projeto eu me desafiei a criar o layout responsivo para mobile e desktop, também foi muito desafiador fazer as funcionalidades, no ínicio eu confesso que fiquei perdido mas aos poucos foi tomando forma.
 
-Então você chegou até aqui. Agora vamos avaliar o seu conhecimento técnico que com isso vamos conseguir entender melhor como você trabalha com versionamento, como você estrutura o seu código, então mostre o seu melhor.
+# Consegui adicionar as seguintes funcionaldiades:
+- Menu
+- Listagem dos produtos pegando os dados passados no Json
+- Lightbox do produto selecionado
+- Adicionar item ao carrinho e escolher a quantidade que deseja adicionar
+- Ícone do carrinho mostrando quantos itens foram adicionados
+- No carrinho podemos ver os items que foram adicionados
+- Podemos remover do carrinho o item que não  desejas mais
+- Úsuario pode recarregar a página que seus itens ainda vão estar listados no carrinho
 
-## A missão:
-
-Sua missão é criar a página abaixo:
-
-![Merlins Potions Layout](assets/potions-layout.png)
-
-### Requisitos
-
-1. Crie um repositório no GitHub ou no Bitbucket
-1. Utilizando a estrutura de pastas que você escolher monte o layout anexo
-1. Utilize as fontes do Google Fonts (Droid Sans e Oswald)
-1. Com o uso de javascript puro, faça com que quando clicado em um produto, seja exibido um lightbox com mais informações sobre o mesmo, utilize o data layer para diferenciar os produtos e estas informações devem puxadas do arquivo json fornecido.
-1. Nos envie o seu repositório :smile:
-
-### Observações
-
-- Você pode utilizar um pre-processador se desejar.
-- Os arquivos estão na pasta **assets**
+Me senti orgulhoso de ter 'finalizado' esse projeto, aprendi muito e também fixei melhor os conhecimentos que já tinha, desenvolvi melhor minha noção e lógica de programação nesse projeto, foi muito desafiador para mim fazer sozinho, apenas com minhas pesquisas, acredito que estou no caminho certo pois a poucos meses eu dei meu primeiro Hello World!
